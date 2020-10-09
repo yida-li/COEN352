@@ -4,8 +4,8 @@ Folder/
 node_modules/
 bin/
 
-**.settings
-*.bin
+.settings
+.bin
 
 .class
 .classpath
