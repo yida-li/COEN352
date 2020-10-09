@@ -1,12 +1,13 @@
 
-# dependencies
+# git will not track anything under folder/node directory
 Folder/
 node_modules/
 bin/
 
+
+# eclipse builds
 .settings
 .bin
-
 .class
 .classpath
 .project
@@ -15,7 +16,7 @@ bin/
 .metadata
 
 
-
+# matching any files ending with the .[ ] extensions
 *.iml
 *.ipr
 *.com
