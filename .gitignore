@@ -1,0 +1,26 @@
+
+# dependencies
+Folder/
+node_modules/
+bin/
+
+**.settings
+*.bin
+
+.class
+.classpath
+.project
+.settings
+.idea
+.metadata
+
+
+
+*.iml
+*.ipr
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
