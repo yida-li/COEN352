@@ -128,7 +128,6 @@ class generic <Key,Value>{
 		list2.insert("T", 100);
 		list2.insert("t", 1000);
 		System.out.println(list2.printString());
-		
 	
 		
 		
