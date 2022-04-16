@@ -59,7 +59,7 @@ public class candid
  public static void main(String[] args)
  { // Read strings from standard input, sort them, and print.
 	 
- String [] b= {"c","z","z","c","d","m","c","b","a"};
+ String [] b= {"c","a","n","d","i","d","d","d","d"};
  
  sort(b);
  show(b);

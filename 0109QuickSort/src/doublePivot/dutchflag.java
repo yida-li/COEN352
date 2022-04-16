@@ -62,11 +62,11 @@ static void threewaypartition(int a[], int l, int r)
 //          |  | i    | | | | |   |j  |     | 
             
                 if (j == l) // we're done here
-                break;                                 //break to line @126
+                break;                                 //break to line @125
  
         // we're also done here
         if (i >= j)
-            break;                                     //break to line @126 
+            break;                                     //break to line @125 
         swap(a,i,j);
 //          [42,444444,5,4,1,2,535,123,12222] 
 //before
@@ -128,12 +128,12 @@ static void threewaypartition(int a[], int l, int r)
 //      | A | B | D | A | G | D | B | K | O | S | T | L | S | K | M |
 //     p|   |   |   |   |   |   |   |i,j|   |   |   |   |   | q | r | 
     int j = i - 1;
-    for (int k = l; k < p; k++, j--)
+    for (int k = l; k <=p; k++, j--)
     {swap(a,k,j);}
 //      | A | B | D | A | G | D | B | K | O | S | T | L | S | K | M |
 //     p|   |   |   |   |   |   | j | i |   |   |   |   |   | q |   |   
     i = i + 1;
-    for (int k = r - 1; k > q; k--, i++)
+    for (int k = r - 1; k >=q; k--, i++)
     {swap(a,i,k);}
 //      | A | B | D | A | G | D | B | K | O | S | T | L | S | K | M |
 //     p|   |   |   |   |   |   | j |   | i |   |   |   |   | q | k | 
@@ -170,7 +170,8 @@ static void threesort(int a[], int l, int r)
  
 static void show(int a[], int n)
 {
-    for (int i = 0; i < n; ++i)System.out.printf("%d  ", a[i]);System.out.printf("\n");
+    for (int i = 0; i < n; ++i)System.out.printf("%d  ", a[i]);
+    System.out.printf("\n");
 }
  
 
@@ -179,10 +180,9 @@ public static void main(String[] args)
     int a[] = { 4, 5, 4, 4, 1, 9, 4, 4, 9, 5, 4, 1, 5 };
     int size = a.length;
    
+      // Function Call
     show(a, size);
-
     threesort(a, 0, size - 1);
-
     show(a, size);
 }
 }
