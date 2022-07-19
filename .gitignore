@@ -4,6 +4,8 @@ Folder/
 node_modules/
 bin/
 target/
+resources/
+test/
 
 # eclipse builds
 .settings
