@@ -3,7 +3,7 @@
 Folder/
 node_modules/
 bin/
-
+target/
 
 # eclipse builds
 .settings
